@@ -1,0 +1,12 @@
+Source: ros-kinetic-rqt-image-view
+Section: misc
+Priority: extra
+Maintainer: Dirk Thomas <dthomas@osrfoundation.org>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-catkin, ros-kinetic-cv-bridge, ros-kinetic-geometry-msgs, ros-kinetic-image-transport, ros-kinetic-rqt-gui, ros-kinetic-rqt-gui-cpp, ros-kinetic-sensor-msgs
+Homepage: http://wiki.ros.org/rqt_image_view
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-rqt-image-view
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kinetic-cv-bridge, ros-kinetic-geometry-msgs, ros-kinetic-image-transport, ros-kinetic-rqt-gui, ros-kinetic-rqt-gui-cpp, ros-kinetic-sensor-msgs
+Description: rqt_image_view provides a GUI plugin for displaying images using image_transport.

@@ -1,0 +1,20 @@
+<launch>
+
+<!-- Dynamixel controller launcher -->
+<include file="$(find dynamixel_custom_controller)/launch/commonControl.launch" command="load"/>
+
+<!-- Coil controller launcher
+<include file="$(find coil_controller)/launch/coilPidControl.launch" command="load"/>-->
+<group ns="coil_pid_controller" >
+    <rosparam file="$(find coil_controller)/config/coil_pid_controller.yaml" command="load" />
+    <node name="control_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen" args="ControllerStates CoilController --shutdown-timeout 0.1" />
+
+    <node pkg="coil_controller" type="coilControllerMainNodeV2" name="coilControllerMainNodeV2" output="screen" ></node>
+</group>
+
+<!-- Tracker launch
+<include file="$(find image_processing)/launch/camera_node.launch" command="load"/> -->
+<node name="cameraNode" type="camera_node" pkg="image_processing"></node>
+<node name="tracker" type="dummyTracker" pkg="image_processing" ns="camera_node" output="screen"></node>
+
+</launch>

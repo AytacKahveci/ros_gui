@@ -1,0 +1,17 @@
+<library path="lib/librqt_program_mode">
+    <class name="rqt_program_mode/ProgramMode" type="program_mode::ProgramMode" base_class_type="rqt_gui_cpp::Plugin">
+        <description>
+            A GUI for program modes in TEME Project
+        </description>
+        <qtgui>
+            <group>
+                <label>TEME</label>
+                <icon type="theme">folder</icon>
+                <statustip>Plugins related to TEME.</statustip>
+            </group>
+            <label>TEME Program Mode</label>
+            <icon type="theme">mail-message-new</icon>
+            <statustip>A GUI for program modes in TEME Project.</statustip>
+        </qtgui>
+    </class>
+</library>

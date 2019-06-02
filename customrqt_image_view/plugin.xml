@@ -1,0 +1,17 @@
+<library path="lib/libcustomrqt_image_view">
+  <class name="customrqt_image_view/ImageView" type="rqt_image_view::ImageView" base_class_type="rqt_gui_cpp::Plugin">
+    <description>
+      A GUI plugin to view a sensor_msgs/Image topic.
+    </description>
+    <qtgui>
+      <group>
+        <label>TEME</label>
+        <icon type="theme">folder</icon>
+        <statustip>Plugins related to TEME.</statustip>
+      </group>
+      <label>Custom Image View</label>
+      <icon type="theme">image-x-generic</icon>
+      <statustip>A GUI plugin for viewing sensor_msgs/Image topics.</statustip>
+    </qtgui>
+  </class>
+</library>

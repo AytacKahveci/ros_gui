@@ -1,0 +1,17 @@
+<library path="src">
+  <class name="coilControllerPlugin" type="coil_controller_plugin.coil_controller_plugin.Gui" base_class_type="rqt_gui_py::Plugin">
+    <description>
+      An example Python GUI plugin to create a great user interface.
+    </description>
+    <qtgui>
+      <group>
+        <label>TEME</label>
+        <icon type="theme">folder</icon>
+        <statustip>Plugins related to TEME.</statustip>
+      </group>
+      <label>Coil Controller Plugin</label>
+      <icon type="theme">ac-adapter-symbolic</icon>
+      <statustip>User interface to drive coils.</statustip>
+    </qtgui>
+  </class>
+</library>

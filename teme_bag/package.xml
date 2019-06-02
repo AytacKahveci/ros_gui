@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package>
+  <name>teme_bag</name>
+  <version>0.0.1</version>
+  <description>The teme_bag package</description>
+
+  <maintainer email="aytackahveci93@gmail.com">Aytac Kahveci</maintainer>
+
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>rospy</build_depend>
+  <run_depend>rospy</run_depend>
+
+  <build_depend>rospy</build_depend>
+  <run_depend>rospy</run_depend>
+  <build_depend>rqt_gui</build_depend>
+  <run_depend>rqt_gui</run_depend>
+  <build_depend>rqt_gui_cpp</build_depend>
+  <run_depend>rqt_gui_cpp</run_depend>
+  <build_depend>qt_gui_cpp</build_depend>
+  <run_depend>qt_gui_cpp</run_depend>
+
+  <export>
+    <rqt_gui plugin="${prefix}/plugin.xml"/>
+  </export>
+</package>

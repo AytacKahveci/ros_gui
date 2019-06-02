@@ -1,0 +1,17 @@
+<library path="lib/libteme_bag">
+    <class name="teme_bag/RecordBag" type="record_bag::RecordBag" base_class_type="rqt_gui_cpp::Plugin">
+        <description>
+            A GUI for taking bag files for TEME Project
+        </description>
+        <qtgui>
+            <group>
+                <label>TEME</label>
+                <icon type="theme">folder</icon>
+                <statustip>Plugins related to TEME.</statustip>
+            </group>
+            <label>TEME Log Gui</label>
+            <icon type="theme">document-save</icon>
+            <statustip>A GUI plugin for taking log files.</statustip>
+        </qtgui>
+    </class>
+</library>
